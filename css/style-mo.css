@@ -866,9 +866,13 @@ nav .menu a.blue{
     font-size: 0.625rem;
 }
 
-.s5 .under .down img{
+.s5 .under .box .arrow{
+    background-image: url(../images/download.png);
+    height: 10px;
     width: 10px;
-    padding-top: 2px;
+    background-position: center 0.2px ;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .s5 .under .priv{
