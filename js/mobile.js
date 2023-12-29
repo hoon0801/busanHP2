@@ -12,17 +12,21 @@ function mobile(){
            setTimeout(function(){
             $('nav div').css({
                 'transform' : 'translateX(0)'
-            })
+            });
            });
+
+           $('nav').stop().slideDown();
+           $(this).addClass('close');
         }else{
             setTimeout(function(){
                 $('nav div').css({
                     'transform' : 'translateX(-100%)'
                 })
                });
+            $('nav').stop().slideUp();
+            $(this).removeClass('close');
+
         }
-        $('nav').stop().slideToggle();
-        $(this).toggleClass('close');
     
     });
 
