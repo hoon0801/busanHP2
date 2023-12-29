@@ -3,9 +3,8 @@ function mobile(){
     let winHeight = window.innerHeight;
     $('.s1').height(winHeight);
  
-    // header
     let navSwitch = false;
-    $('.navOpen').click(function(){
+    $('.navOpen').on('click' , function(){
     
         navSwitch = !navSwitch;
     
@@ -26,6 +25,9 @@ function mobile(){
         $(this).toggleClass('close');
     
     });
+
+   
+ 
     // header 클릭시 이동
     
     let menuList = $('.menu a'); 

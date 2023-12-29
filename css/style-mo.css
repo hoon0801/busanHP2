@@ -84,8 +84,8 @@ nav{
     position: fixed;
     top: 50px;
     left: 0;
-    position: absolute;
 }
+
 nav div{
     display: flex;
     width:100%;
