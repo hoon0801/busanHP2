@@ -829,26 +829,46 @@ nav .menu a.blue{
     justify-content: space-between;
     margin-top: 1.5rem;
 }
-.s5 .under .down{
+
+/* .s5 .under .down{
     width: 120px;
     height: 25px;
     border: 1px solid #363636;
     border-radius: 1.5vw;
-    display: flex;
-    text-align: center;
     align-items: center;
     cursor: pointer;
 }
 .s5 .under .down p{
     font-size: 0.625rem;
-    margin-left: 3px;
 }
 .s5 .under .down .d-arrow{
     width: 0.8rem;
-    margin-left: 2px;
 }
 .s5 .under .down .d-arrow img{
     width: 100%;
+} */
+
+.s5 .under .down{
+    width: 120px;
+    height: 25px;
+    border: 1px solid #363636;
+    border-radius: 1.5vw;
+  
+}
+
+.s5 .under .box{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.s5 .under .down p{
+    font-size: 0.625rem;
+}
+
+.s5 .under .down img{
+    width: 12px;
+    margin-left: 2px;
 }
 
 .s5 .under .priv{
