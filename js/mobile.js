@@ -4,7 +4,7 @@ function mobile(){
     $('.s1').height(winHeight);
  
     let navSwitch = false;
-    $('.navOpen').on('click' , function(){
+    $('.navOpen').on('touchstart ' , function(){
     
         navSwitch = !navSwitch;
     
@@ -65,24 +65,24 @@ function mobile(){
     // 
 
      // s4
-    //  const highlight = document.getElementById("highlight-style");
+     const highlight = document.getElementById("highlight-style");
 
-    //  gsap.registerPlugin(ScrollTrigger);
+     gsap.registerPlugin(ScrollTrigger);
      
-    //  gsap.utils.toArray(".text-highlight").forEach((highlight) => {
-    //    ScrollTrigger.create({
-    //      trigger: highlight,
-    //      start: "-100px center",
-    //      onEnter: () => highlight.classList.add("active")
-    //    });
-    //  });
+     gsap.utils.toArray(".text-highlight").forEach((highlight) => {
+       ScrollTrigger.create({
+         trigger: highlight,
+         start: "-100px center",
+         onEnter: () => highlight.classList.add("active")
+       });
+     });
      
-    //  const setHighlightStyle = (value) =>
-    //    document.body.setAttribute("data-highlight", value);
+     const setHighlightStyle = (value) =>
+       document.body.setAttribute("data-highlight", value);
      
-    //  highlight.addEventListener("change", (e) => setHighlightStyle(e.target.value));
+     highlight.addEventListener("change", (e) => setHighlightStyle(e.target.value));
      
-    //  setHighlightStyle(highlight.value);
+     setHighlightStyle(highlight.value);
      // s4
 
      $('nav .menu a').click(function(){
