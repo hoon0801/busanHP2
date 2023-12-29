@@ -4,8 +4,8 @@ function mobile(){
     $('.s1').height(winHeight);
  
     let navSwitch = false;
-    $('.navOpen').on('touchstart ' , function(){
-    
+    $('.navOpen').on('touchstart ' , function(e){
+      e.preventDefault();
         navSwitch = !navSwitch;
     
         if(navSwitch == true){
